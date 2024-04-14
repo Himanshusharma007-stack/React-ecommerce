@@ -73,7 +73,7 @@ export function Navbar() {
             >
               <div className="flex">
                 <img
-                  src="../src/assets/icons/cart-icon.png"
+                  src="../assets/icons/cart-icon.png"
                   height={18}
                   width={18}
                 />
