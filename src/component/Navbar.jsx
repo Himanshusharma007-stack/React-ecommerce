@@ -8,15 +8,15 @@ import { useSelector } from "react-redux";
 const menuItems = [
   {
     name: "Home",
-    href: "/",
+    href: "/React-ecommerce/",
   },
   {
     name: "About",
-    href: "/aboutowner",
+    href: "/React-ecommerce/aboutowner",
   },
   {
     name: "Contact",
-    href: "/contactUs",
+    href: "/React-ecommerce/contactUs",
   },
 ];
 
@@ -32,7 +32,7 @@ export function Navbar() {
   return (
     <div className="relative w-full bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
-        <Link to="/">
+        <Link to="/React-ecommerce/">
           <div className="inline-flex items-center space-x-2">
             <span>
               <svg
@@ -66,7 +66,7 @@ export function Navbar() {
           </ul>
         </div>
         <div className="hidden lg:block">
-          <Link to="/cartitems">
+          <Link to="/React-ecommerce/cartitems">
             <button
               type="button"
               className="rounded-full bg-black px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"

@@ -35,7 +35,7 @@ export function Footer() {
               <li className="p-5">
                 <Link
                   className="font-medium text-gray-600 hover:text-gray-700"
-                  to="/contactUs"
+                  to="/React-ecommerce/contactUs"
                 >
                   Contact Us
                 </Link>

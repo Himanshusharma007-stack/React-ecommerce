@@ -57,7 +57,6 @@ export function Cart() {
             aria-labelledby="cart-heading"
             className="rounded-lg bg-white lg:col-span-8"
           >
-            {/* <Link to={`/product/${props.data.id}`}></Link> */}
             <h2 id="cart-heading">
               {cartArr.length ? (
                 "Items in your shopping cart"
@@ -65,7 +64,7 @@ export function Cart() {
                 <>
                   {" "}
                   Your cart is empty
-                  <Link to="/" className="text-blue-500">
+                  <Link to="/React-ecommerce/" className="text-blue-500">
                     {" "}
                     click here to go to home.
                   </Link>
@@ -75,7 +74,7 @@ export function Cart() {
             <ul role="list" className="divide-y divide-gray-200">
               {cartArr.map((product, productIdx) => (
                 <div key={product.id} className="">
-                  <Link to={`/product/${product.id}`}>
+                  <Link to={`/React-ecommerce/product/${product.id}`}>
                   <li className="flex py-6 sm:py-6 ">
                     <div className="flex-shrink-0">
                       <img

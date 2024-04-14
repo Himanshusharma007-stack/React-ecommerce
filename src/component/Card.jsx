@@ -21,7 +21,7 @@ function Card(props) {
   return (
     <>
       <div className="w-[300px] rounded-md border">
-      <Link to={`/product/${props.data.id}`}>
+      <Link to={`/React-ecommerce/product/${props.data.id}`}>
         <img
           src={props.data.image}
           className="h-[200px] w-full rounded-t-md object-cover"
