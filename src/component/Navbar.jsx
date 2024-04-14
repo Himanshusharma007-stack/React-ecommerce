@@ -4,6 +4,7 @@ import React from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import CartIcon from '../assets/icons/cart-icon.png';
 
 const menuItems = [
   {
@@ -73,7 +74,7 @@ export function Navbar() {
             >
               <div className="flex">
                 <img
-                  src="./src/assets/icons/cart-icon.png"
+                  src={CartIcon}
                   height={18}
                   width={18}
                 />
