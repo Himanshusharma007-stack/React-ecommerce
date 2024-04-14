@@ -16,7 +16,7 @@ import { Provider } from 'react-redux'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/React-ecommerce",
     element: <Layout />,
     errorElement: <PageNotFound />,
     children: [
