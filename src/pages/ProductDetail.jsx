@@ -42,7 +42,7 @@ export function ProductDetail() {
   }, []);
 
   function increamentCounter(item) {
-    item = { ...item, count: item.count + 1 };
+    item = { ...item, count: ( item?.count || 0 )+ 1 };
     setProductDetail(item);
     dispatch(updateArrOfItems({ item }));
   }

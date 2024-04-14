@@ -4,7 +4,7 @@ import React from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import CartIcon from '../assets/icons/cart-icon.png';
+import CartIcon from "../assets/icons/cart-icon.png";
 
 const menuItems = [
   {
@@ -73,11 +73,7 @@ export function Navbar() {
               className="rounded-full bg-black px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               <div className="flex">
-                <img
-                  src={CartIcon}
-                  height={18}
-                  width={18}
-                />
+                <img src={CartIcon} height={18} width={18} />
                 &nbsp;
                 {cartArr.length || 0}
               </div>
@@ -134,14 +130,23 @@ export function Navbar() {
                         </span>
                       </Link>
                     ))}
+                    <Link
+                      to="/React-ecommerce/cartitems"
+                      className="flex justify-end"
+                    >
+                      <button
+                        type="button"
+                        className="rounded-full bg-black px-3 py-3 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                      >
+                        <div className="flex">
+                          <img src={CartIcon} height={18} width={18} />
+                          &nbsp;
+                          {cartArr.length || 0}
+                        </div>
+                      </button>
+                    </Link>
                   </nav>
                 </div>
-                <button
-                  type="button"
-                  className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                >
-                  Button text
-                </button>
               </div>
             </div>
           </div>
