@@ -37,7 +37,7 @@ export function Checkout() {
 
   useEffect(() => {
     // findTotalPrice();
-    if (!cartArr.length) navigate("/");
+    if (!cartArr.length) navigate("/React-ecommerce/");
   }, []);
 
   function removeItem(item) {
