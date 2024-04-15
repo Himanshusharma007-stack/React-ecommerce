@@ -102,7 +102,7 @@ export function Navbar() {
                         />
                       </svg>
                     </span>
-                    <span className="font-bold">DevUI</span>
+                    <span className="font-bold">JewelTechJunction</span>
                   </div>
                   <div className="-mr-2">
                     <button
